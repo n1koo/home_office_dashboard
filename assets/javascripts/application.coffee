@@ -1,6 +1,7 @@
 # dashing.js is located in the dashing framework
 # It includes jquery & batman for you.
 #= require dashing.js
+#= require dashing-contrib/assets/widgets
 #= require moment
 #= require moment-timezone-with-data-2010-2020.js
 

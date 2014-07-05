@@ -16,14 +16,11 @@ class GithubFeed
 
   # Types of events displayed on feed
   EVENT_TYPES = ["PushEvent"]
-  
-  def initialize(user, org, token)
-    file = File.read('github_auth.json')
-    config = JSON.parse(file)
 
-    @token  = config['token']
-    @user   = config['user']
-    @org    = config['org']
+  def initialize(user, org, token)
+    @token  = ENV['GITHUB_TOKEN']
+    @user   = ENV['GITHUB_USER']
+    @org    = ENV['GITHUB_ORG']
     @client = Faraday.new(:url => 'https://api.github.com/')
   end
 
