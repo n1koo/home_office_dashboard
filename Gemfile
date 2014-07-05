@@ -9,6 +9,9 @@ gem 'faraday'
 # For forecast
 gem 'json'
 
+# For Calendar
+gem 'nokogiri'
+
 # For debug
 gem 'pry'
 

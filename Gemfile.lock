@@ -154,5 +154,6 @@ DEPENDENCIES
   dashing-contrib (~> 0.1.2)
   faraday
   json
+  nokogiri
   pry
   twitter (>= 5.0.0)

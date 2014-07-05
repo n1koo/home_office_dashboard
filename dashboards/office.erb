@@ -1,7 +1,10 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":2,"size_y":2},{"col":3,"row":4,"size_x":2,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1}]')
+});
+</script>
 
-
-
-<% content_for :title do %>1080p dashboard<% end %>
+<% content_for :title do %>n1ko's dashboard<% end %>
 
 <div class="gridster">
   <ul>
@@ -26,6 +29,14 @@
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="forecast" data-view="Forecast" data-widget_title="<img src='http://forecast.io/favicon.ico' />Weather Forecast"> ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="calendar_events" data-pre="0" data-view="Calendar"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="calendar_events" data-pre="1"  data-view="Calendar"></div>
     </li>
 <!--
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
@@ -59,5 +70,4 @@
     </li>
 -->
   </ul>
-  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
 </div>
