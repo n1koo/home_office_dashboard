@@ -7,7 +7,7 @@ require 'cgi'
 # Config
 # make sure your URLs end with /full, not /simple (which is default)!
 # ------
-calendars = [{name: 'private', url: 'ENV['GOOGLE_CALENDAR_URL']'}]
+calendars = [{name: 'private', url: ENV['GOOGLE_CALENDAR_URL']}]
 events = Array.new
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
